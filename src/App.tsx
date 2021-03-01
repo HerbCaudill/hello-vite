@@ -6,12 +6,15 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-primary h-screen ">
+    <div className="bg-primary-500 h-screen ">
       <header className="text-center flex flex-col text-center justify-center text-white">
-        <img src={logo} className=" max-h-64" alt="logo" />
+        <img src={logo} className="max-h-64" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <button onClick={() => setCount(count => count + 1)}>
+          <button
+            className="p-4 m-5 leading-none border-2 border-white rounded-xl focus:outline-transparent hover:bg-primary-400"
+            onClick={() => setCount(count => count + 1)}
+          >
             count is: {count}
           </button>
         </p>
